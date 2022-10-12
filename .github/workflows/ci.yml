@@ -44,9 +44,11 @@ jobs:
 
       - name: Install dependencies 👨🏻‍💻
         run: yarn
-
+        working-directory: ./myapp
       - name: Run linter 👀
         run: yarn lint
+        working-directory: ./myapp
 
       - name: Run tests 🧪
         run: yarn test
+        working-directory: ./myapp
